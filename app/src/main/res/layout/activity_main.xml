@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    tools:context=".MainActivity">
+
+    <!-- Tiêu đề -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thông tin khách hàng"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:padding="16dp"
+        android:gravity="center"
+        android:background="@drawable/title_background"
+        android:textColor="#FFFFFF"/> <!-- Màu chữ trắng -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/title"
+        android:layout_marginTop="20dp"
+        android:layout_above="@id/form_submit_button">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/form_input_name"
+            android:hint="@string/form_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/form_input_phone"
+            android:hint="@string/form_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/form_input_address"
+            android:hint="@string/form_address"
+            android:layout_width="match_parent"
+            android:inputType="textPassword"
+            android:layout_height="wrap_content" />
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/form_input_password"
+            android:hint="@string/form_address"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/gender_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_gender"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_gravity="center_vertical"/>
+
+            <CheckBox
+                android:id="@+id/form_input_isMen"
+                android:layout_width="104dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/form_isMen" />
+
+            <CheckBox
+                android:id="@+id/form_input_isGirl"
+                android:layout_width="117dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/form_isGirl" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Nút submit -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/form_submit_button"
+        android:minHeight="60dp"
+        android:shadowRadius="@integer/material_motion_duration_long_1"
+        android:layout_alignParentBottom="true"
+        android:text="@string/label_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"/>
+
+</RelativeLayout>

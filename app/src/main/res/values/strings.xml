@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Giao diện mobile</string>
+    <string name="form_name">Tên khách hàng</string>
+    <string name="form_phone">Số điện thoại khách hàng</string>
+    <string name="form_address">Địa chỉ khách hàng</string>
+    <string name="form_password">Mật khẩ khách hàng</string>
+    <string name="form_isMen">Nam</string>
+    <string name="form_isGirl">Nữ</string>
+    <string name="label_gender">Giới tính</string>
+    <string name="label_save">Lưu thông tin</string>
+</resources>
